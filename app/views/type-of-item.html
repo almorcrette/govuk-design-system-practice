@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/title" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-heading-xl">
+                What do you want to sell?
+              </h1>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="type-of-item-1" name="type-of-item" type="radio" value="Antiques">
+                <label class="govuk-label govuk-radios__label" for="type-of-item-1">
+                  Antiques
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="type-of-item-2" name="type-of-item" type="radio" value="Appliances">
+                <label class="govuk-label govuk-radios__label" for="type-of-item-2">
+                  Appliances
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="type-of-item-3" name="type-of-item" type="radio" value="Arts and crafts">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                  Arts and crafts
+                </label>
+              </div>
+              <div class="govuk-radios__divider">or</div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="type-of-item-other" name="type-of-item" type="radio" value="Other">
+                <label class="govuk-label govuk-radios__label" for="type-of-item-other">
+                  Something else
+                </label>
+              </div>
+            </div>
+        
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
