@@ -13,13 +13,23 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Heading or question goes here</h1>
-
       <form class="form" action="/url/of/next/page" method="post">
 
-        <p>[Insert question content here]</p>
-
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="230">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="can-you-provide-more-detail-about-the-item">
+              <h1 class="govuk-heading-xl">
+                Can you provide more detail about the item?
+              </h1>
+            </h1>
+            <textarea class="govuk-textarea govuk-js-character-count" id="item-description" name="can-you-provide-more-detail-about-the-item" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+          </div>
+        
+          <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+            You can enter up to 230 characters
+          </div>
+        
+        </div>
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
