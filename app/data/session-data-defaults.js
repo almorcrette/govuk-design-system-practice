@@ -19,6 +19,8 @@ Example usage:
 
 module.exports = {
 
+  "service-version": "v 1.0"
+
   // Insert values here
 
 }
