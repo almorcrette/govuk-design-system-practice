@@ -92,122 +92,119 @@
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Previous application number
+            Name
           </dt>
           <dd class="govuk-summary-list__value">
-            502135326
+            {{ data['name'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/contact">
               Change
-              <span class="govuk-visually-hidden"> previous application number</span>
+              <span class="govuk-visually-hidden"> name</span>
             </a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Licence type
+            Email address
           </dt>
           <dd class="govuk-summary-list__value">
-            For personal use
+            {{ data['email'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/contact">
               Change
-              <span class="govuk-visually-hidden"> licence type</span>
+              <span class="govuk-visually-hidden"> email address</span>
             </a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Home address
+            Telephone number
           </dt>
           <dd class="govuk-summary-list__value">
-            72 Guild Street
-            <br>London
-            <br>SE23 6FH
+            {{ data['telephone-number'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/contact">
               Change
-              <span class="govuk-visually-hidden"> home address</span>
-            </a>
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Licence period
-          </dt>
-          <dd class="govuk-summary-list__value">
-            Valid for 6 months
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="#">
-              Change
-              <span class="govuk-visually-hidden"> licence period</span>
+              <span class="govuk-visually-hidden"> telephone number</span>
             </a>
           </dd>
         </div>
       </dl>
 
-      <h2 class="govuk-heading-m">Where item can be collected</h2>
+      <h2 class="govuk-heading-m">Where the item can be collected</h2>
 
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Previous application number
+            Address line 1
           </dt>
           <dd class="govuk-summary-list__value">
-            502135326
+            {{ data['address-line-1'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/location">
               Change
-              <span class="govuk-visually-hidden"> previous application number</span>
+              <span class="govuk-visually-hidden"> address line 1</span>
             </a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Licence type
+            Address line 2 (optional)
           </dt>
           <dd class="govuk-summary-list__value">
-            For personal use
+            {{ data['address-line-2'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/location">
               Change
-              <span class="govuk-visually-hidden"> licence type</span>
+              <span class="govuk-visually-hidden"> address line 2 optional</span>
             </a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Home address
+            Town or city
           </dt>
           <dd class="govuk-summary-list__value">
-            72 Guild Street
-            <br>London
-            <br>SE23 6FH
+            {{ data['address-town'] }}
+
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/location">
               Change
-              <span class="govuk-visually-hidden"> home address</span>
+              <span class="govuk-visually-hidden"> address town</span>
             </a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Licence period
+            County (optional)
           </dt>
           <dd class="govuk-summary-list__value">
-            Valid for 6 months
+            {{ data['address-county'] }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a href="#">
+            <a href="/location">
               Change
-              <span class="govuk-visually-hidden"> licence period</span>
+              <span class="govuk-visually-hidden"> county optional</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Postcode
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ data['address-postcode'] }}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a href="/location">
+              Change
+              <span class="govuk-visually-hidden"> postcode</span>
             </a>
           </dd>
         </div>
