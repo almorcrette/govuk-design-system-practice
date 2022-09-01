@@ -13,6 +13,14 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <p> {{ testData }} </p>
+
+      <p> {{ testArray }} </p>
+
+      <p> {{ boards }} </p>
+
+      <p> {{ data['service-version'] }} </p>
+
       <form class="form" action="/type-of-item" method="post">
 
         {% from "govuk/components/radios/macro.njk" import govukRadios %}
